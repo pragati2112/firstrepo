@@ -1,0 +1,53 @@
+<html>
+    <head>
+<style>
+.a{
+    height: 400px;
+    width:100%;
+    background-color: palevioletred;
+}
+.b{
+    height:30px;
+    width:30px;
+    background-color: brown;
+
+    position: absolute;
+}
+.b:hover + .c
+{
+    display:block;
+    transition: transform 1s;
+}
+.c{
+    display:none;
+    height:400px;
+    width:50px;
+    background-color: blueviolet;
+position:relative;
+margin-top: 0px;
+margin-left: 0px;
+}
+.b:hover{
+    transform: translate(50px,0);
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+</style>
+    </head>
+    <body>
+     <div class="a">
+    <div class="b"> </div>
+    <div class="c"> </div>
+</div>
+    
+    
+    
+    
+     <div></div>
+        
+
+
+    </body>
+</html>

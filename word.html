@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+var data={
+       words:{A:'apple',B:'boy',C:'cat'},
+       definition:{'apple':'a fruit','boy':'a human','cat':'an animal'}
+
+}
+ function getword(ob)
+{
+var c=data.words[ob];
+var d=data.definition[c];
+document.write(c);
+document.write(d);
+
+}
+// function getdefinition(ob1)
+// {
+//     document.write(data.definition[ob1]);
+// }
+getword('C');
+
+
+</script>
+
+
+
+
+<body>
+    
+</body>
+</html>

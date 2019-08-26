@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+
+
+function fn()
+{
+    var n=document.getElementById("t1").value;
+    for(var i=1;i<=n;i++)
+    {
+       for(var j=1;j<=i;j++)
+       {
+           if(i%2!=0)
+            {
+                if(j%2!=0)
+                document.write("1");
+                else
+                document.write("0");
+            }
+          else
+          {
+              if(j%2==0)
+              document.write("1");
+              else
+              document.write("0");
+          }
+       }
+       document.write("<br>")
+      
+    }
+}
+
+function fn1()
+{
+    var n=document.getElementById("t1").value;
+   var count=1;
+    for(var i=1;i<=n;i++)
+    {
+       for(var j=1;j<=i;j++)
+       {
+          document.write(count);
+            count++;
+       }
+       document.write("<br>")
+    }
+}
+
+function fn2()
+{
+    alert("hello");
+   
+    }
+   
+    alert("start");
+    setTimeout(fn2,3000);
+    for(var i=1;i<=3000000;i++)
+    {
+
+    }
+    alert("end");
+
+</script>
+    
+
+
+
+</head>
+<body>
+    <input type="text" id="t1">
+<button onclick="fn2()">click here</button>
+
+    
+</body>
+</html>

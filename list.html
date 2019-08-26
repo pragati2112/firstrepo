@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.div{
+    background-color:black;
+    height: 100px;
+    width:100%;
+    margin-top: 0px;
+    display:flex;
+    justify-content: flex-end;
+
+  
+ }
+body{
+    
+    margin:0px;
+}
+.menus{
+    background-color: black;
+    
+    width:80%;
+    margin-top: 0px;
+    display:flex;
+    justify-content: flex-end;
+
+}
+.logo{
+    height:50px;
+    width:20%;
+    display:flex;
+    justify-content: flex-start;
+}
+ul{
+    padding:0px;
+    margin: 0px;
+   
+
+    }
+ul li{
+    height:40px;
+    float:left;
+    color:white;
+    /* background-color:darksa */
+    font-size: 20px;
+    list-style:none;
+    /* margin-left: 20px; */
+    width:200px;
+    line-height: 40px;
+    border-right:1px solid black;
+    text-align: center;
+}
+ul li:hover{
+    background-color: darkolivegreen;
+}
+
+ul li ul li{
+   display:none;
+   float:none;
+   background-color: black;
+   color: white;
+   
+
+}
+ul li:hover ul li{
+    display:block;
+    
+
+}
+.hide{
+    border-right:0px;
+}
+h1{
+    padding:0px;
+    margin:0px;
+}
+.div1{
+    height:300px;
+    width:100%;
+    background-color: darkolivegreen;
+    text-align: center;
+    line-height: 300px;
+
+}
+.text{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+       font-size: 50px;
+    color:black; 
+}
+</style>
+
+
+
+
+
+<body>
+    <div class="div">
+     <div class="logo"><img src="logo.png" width=90px height=90px></div>
+     <ul class="menus">
+         <li>HOME
+             <ul>
+                 <li>ORGANICS</li>
+                 <li>FRUITS</li>
+                 <li>JUICE</li>
+                 <li>FOOD</li>
+            
+             </ul>
+         </li>
+         <li>ADDRESS
+             <UL>
+                 <li> HEAD OFFICE </li>
+                 <li> LOCAL OFFICE</li>
+            
+             </UL>
+         </li>
+         <li>CONTACTS
+                <UL>
+                        <li> 9999999999 </li>
+                        <li>234567899</li>
+                   
+                    </UL>
+         </li>
+         <li class="hide">LOGIN/SIGNUP
+                <UL>
+                        <li> LOGIN </li>
+                        <li>SIGN UP</li>
+                   
+                    </UL>
+         </li>
+        </ul>   
+</div>
+<h1 class="div1 text">WELCOME TO BIOTIQE FOOD</h1>
+    
+    
+</body>
+</html>

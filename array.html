@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+var classs= 
+    {standard:5,
+     no_students:3,
+     students:[{ name:"ram",age:25,marks:[25,75,33,19,38]},
+     
+              { name:"sita",age:30,marks:[95,78,88,99,85]},
+              { name:"hanu",age:40,marks:[33,35,65,75,78]}
+              ]
+    }
+
+
+// function fun(ob)
+// {    
+//     document.write("name= "+ob.students[1].name);
+//     var c=classs.students[1].marks;
+//     var result=c.every(myfunction);
+//     document.write("<br>result= "+result);
+//     var sum= c.reduce(sum1);
+//     document.write("total= "+sum);
+//     fun1(sum);
+// }
+// fun(classs);
+
+// var c=classs.students[1].marks;
+// var result=c.every(myfunction);
+
+function myfunction(value)
+{   
+    return value >33;
+    
+}
+
+// function sum1(total,value)
+// {
+//     return total + value;
+
+// }
+
+// function fun1(sum)
+// {
+//  var percentage=(sum/500)*100;
+//  if(percentage>=75)
+//  {
+//    document.write("<br>grade=A");  
+//  }
+// else
+// document.write("grade=B");
+// }
+
+function fn()
+{   
+    var a=document.getElementById("demo").value;
+    document.write(a);
+    if(a==classs.students[1].name)
+    {
+    var c=classs.students[1].marks;
+    var result=c.every(myfunction);
+    document.write("<br>result= "+result);
+    }
+    else if(a==classs.students[0].name )
+    {
+        var c=classs.students[0].marks;
+    var result=c.every(myfunction);
+    document.write("<br>result= "+result);
+    }
+     else
+   {
+    var c=classs.students[2].marks;
+    var result=c.every(myfunction);
+    document.write("<br>result= "+result);
+   }
+
+
+
+}
+
+
+
+</script>
+
+
+
+<body>
+
+    <input type="text" id="demo">
+    <button onclick="fn()">click me </button>
+    
+
+
+</body>
+</html>

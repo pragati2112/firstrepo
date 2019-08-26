@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+function person(n,a)
+{
+    this.name=n;
+    this.age=a;
+}
+var d=new person("ram",24);
+var d1=new person("sita",24);
+document.write(JSON.stringify(d));
+document.write(JSON.stringify(d1));
+
+person.prototype.isadult= function(){
+    if(this.age>18)
+    document.write("yes");
+    else
+    document.write("no");
+}
+
+d.isadult();
+d1.isadult();
+
+</script>
+
+
+
+<body>
+    
+</body>
+</html>
