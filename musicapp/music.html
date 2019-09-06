@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type= "text/css" href="style.css">
+
+</head>
+<body>
+    <h1> <i class = "fa fa-music" aria-hidden="true">MY MUSIC PLAYER</i> <i class = "fa fa-music" aria-hidden="true">
+</i></h1>
+
+    <main>
+  <div class="a song">a</div>
+  <div class="b song">b</div>
+
+  <div class="c song">c</div>
+  <div class="d song">d</div>
+
+  <div class="e song">e</div>
+  <div class="f song">f</div>
+
+  </main>
+  <script>
+  var divlength= document.querySelectorAll('.song').length;
+  for(var i=0;i<divlength;i++)
+  {
+      var demo= document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+      var demo= document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+
+  }
+
+  var song=new Audio();
+  song.src="tera.mp3";  
+  var song1=new Audio();
+  song1.src= "tujhe.mp3";
+
+  function playsong()
+ {
+var songid=this.innerHTML;
+    
+    switch(songid)
+    {
+      case "a":
+         song.play();
+      break;
+      
+      case "b":
+        song1.play();
+        break;
+      default:
+        console.log("wrong input");
+    }
+ }
+ function pausesong()
+ {
+var songid=this.innerHTML;
+    
+    switch(songid)
+    {
+      case "a":
+         song.pause();
+      break;
+      
+      case "b":
+        song1.pause();
+        break;
+
+    }
+ }
+  </script>
+</body>
+</html>

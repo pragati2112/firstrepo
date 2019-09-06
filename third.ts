@@ -1,5 +1,6 @@
 class student1
-{ roll:number;
+{ 
+    roll:number;
     marks:number;
 
   print(roll:number,marks:number) 
@@ -21,8 +22,8 @@ class clerk1
      {
       
        if(s.marks>=80)
-       {
-           console.log("A");
+       {    
+           console.log("A");                                                                                                                                                     
        }
            else
            {

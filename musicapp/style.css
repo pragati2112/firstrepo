@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color:#444;
+    font-size: 30px;
+    padding:30px;
+}
+main{
+    width:90%;
+    height:500px;
+    border:2px solid red;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:auto;
+ 
+}
+div{
+    height:160px;
+    width:30%;
+    border:1px solid black;
+    margin:10px;
+}
+.a
+{
+    background-image: url(mpic1.jpg);
+}
+
+.b
+{
+    background-image: url(mpic2.jpg);
+}
+.c
+{
+    background-image: url(mpic3.jpg);
+}
+.d
+{
+    background-image: url(mpic4.jpg);
+}
+.e
+{
+    background-image: url(mpic5.jpg);
+}
+.f
+{
+    background-image: url(mpic6.jpg);
+}
